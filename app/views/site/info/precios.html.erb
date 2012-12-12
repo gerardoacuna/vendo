@@ -9,7 +9,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="six columns">
+				<div class="four columns">
 					<table>
 						<thead>
 							<tr>
@@ -41,11 +41,53 @@
 							<tr>
 								<td>Dominio <strong>No Incluído</strong></td>
 							</tr>
+							<tr>
+								<td><%= link_to 'Subscribe', new_user_registration_path(plan: 'free'), class: 'button' %> </td>
+							</tr>
 						</tbody>
 					</table>
 				</div>
 
-				<div class="six columns">
+				<div class="four columns">
+					<table>
+						<thead>
+							<tr>
+								<th>
+									<h2>Estándard</h2>
+									<h3>$300<span>/mes</span></h3>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Instalación <strong>Gratis</strong></td>
+							</tr>
+							<tr>
+								<td>Hosting <strong>Incluido</strong></td>
+							</tr>
+							<tr>
+								<td>Transferencias <strong>Ilimitadas</strong></td>
+							</tr>
+							<tr>
+								<td><strong>3%</strong> de Comisión por Transferencia</td>
+							</tr>
+							<tr>
+								<td><strong>50</strong> Productos</td>
+							</tr>
+							<tr>
+								<td><strong>5GB</strong> de Almacenamiento</td>
+							</tr>
+							<tr>
+								<td>Dominio <strong>No Incluído</strong></td>
+							</tr>
+							<tr>
+								<td><%= link_to 'Subscribe', new_user_registration_path(plan: 'standard'), class: 'button' %> </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="four columns">
 					<table>
 						<thead>
 							<tr>
@@ -76,6 +118,9 @@
 							</tr>
 							<tr>
 								<td>Dominio <strong>No Incluído</strong></td>
+							</tr>
+							<tr>
+								<td><%= link_to 'Subscribe', new_user_registration_path(plan: 'unlimited'), class: 'button' %> </td>
 							</tr>
 						</tbody>
 					</table>

@@ -12,7 +12,7 @@ Vendo::Application.routes.draw do
 
   root :to => "site/home#index"
 
-  devise_for :users
+	devise_for :users, :controllers => { :registrations => 'auth/registrations' }
   resources :users
 
 end
