@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.9'
 
 gem 'pg'
+gem "thin"
+
 gem 'jquery-rails'
 gem "bootstrap-sass"
 gem "devise"
@@ -32,11 +34,9 @@ group :development, :test do
 end
 
 group :assets do
+	gem 'compass-rails'
+	gem 'zurb-foundation'
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
-end
-
-group :production do
-	gem "thin"
 end

@@ -1,0 +1,22 @@
+@import "constants";
+
+body, select, input, textarea, p {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	color: $main-text-color;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'NexaLight';
+  font-weight: normal;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  color: #777777;
+}
+
+a {
+  color: #008cd2;
+}

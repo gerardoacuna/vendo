@@ -1,0 +1,30 @@
+@import "mixins";
+@import "constants";
+
+.call-to-action {
+	display: block;
+	text-align: center;
+	a {
+		background: #333;
+		padding: 15px;
+		margin: 15px;
+		color: #fff;
+		font-family: 'NexaLight';
+		font-size: 24px;
+		display: inline-block;
+		@include vendor(border-radius, 5px);
+		&:hover {
+			background: #fd4239;
+		}
+	}
+}
+
+#signup {
+	.call-to-action {
+		a {
+			font-family: 'NexaBold';
+			background: $green;
+			font-size: 22px;
+		}
+	}
+}

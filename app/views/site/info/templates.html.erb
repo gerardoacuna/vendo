@@ -1,0 +1,41 @@
+<% provide(:titletag, 'Diseño, Templates, Plantillas, Tienda Online, Software de Comercio Electrónico') %>
+<% provide(:description, 'Vea algunos ejemplos actuales de tiendas online de Vendorama con templates y diseños de plantillas exclusivas de comercio electrónico.') %>
+
+   <section>
+		<div class="row">
+			<div class="twelve columns">
+				<h1>Conoce nuestros templates.</h1>
+				<p>
+					Diseños modernos y sofisticados para lucir mejor tus productos. Nuestras tiendas han sido diseñadas con el cliente y el comprador en mente con el fin de darle mayor valor a tu tienda.
+				</p>
+			</div>
+		</div>	
+	</section>
+
+	<section>
+		<article>
+			<div class="row">
+				<div class="twelve columns">
+					<ul id="template-grid" class="block-grid two-up">
+						<% @themes.each do |theme| %>
+							<li>
+								<span>
+									<%= image_tag theme.screenshots.first.url(:large) %>
+									<div>
+										<%= link_to 'Ver Demo', "http://#{theme.color}.vendorama.mx" %>
+										<h4><%= theme.name.humanize %></h4>
+										<p><%= theme.description %></p>
+									</div>
+								</span>
+							</li>
+				    <% end %>
+				    <li>
+				    	<%= image_tag 'templates-soon.png' %>
+				    </li>
+					</ul>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<%=	render partial: "site/layouts/call_to_action" %>

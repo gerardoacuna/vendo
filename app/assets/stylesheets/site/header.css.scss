@@ -1,0 +1,57 @@
+@import "constants";
+
+#logo {
+	float: left;
+	width: 230px;
+	height: 107px;
+	background: image-url('logo.png') center no-repeat;
+	text-indent: 9999em;
+	display: block;
+	margin: 0;
+	overflow: hidden;
+}
+
+//HEADER
+header {
+	background: #fff;
+	border-bottom: 1px solid #eee;
+	nav {
+		overflow: auto;
+		margin: 0 auto;
+		max-width: 960px;
+		width: 100%;
+		ul {
+			float: right;
+			margin: 0;
+			li {
+				float: left;
+				list-style: none;
+				margin: 0 0 0 20px;
+				a {
+					display: block;
+					padding: 45px 0;
+					font-size: 14px;	
+					font-family: 'NexaBold';
+					color: #777;
+					text-transform: uppercase;
+					text-decoration: none;
+					&:hover {
+						color: #333;
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	background: #fff;
+	padding: 30px 0;
+	text-align: center;
+	h6 {
+		font-family: 'NexaLight';
+		font-size: 16px;
+		margin: 5px 0; 
+		font-weight: normal;
+	}
+}

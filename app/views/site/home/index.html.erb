@@ -1,0 +1,184 @@
+<% provide(:title, 'Comercio Electrónico, Tienda Online, Hospedaje de Website de Comercio Electrónico') %>
+<% provide(:description, 'Vendorama es una solución para websites de comercio electrónico que le permite vender en línea con todo lo necesario para administrar su propia tienda online.') %>
+
+	<section id="hero">
+		<div class="heading">
+	    <h1>Hoy puedes emprender tu propio negocio.</h1>
+	    <h2>Prueba la experiencia de vender en linea.</h2>
+		</div>
+    <div class="call-to-action">
+    	<%= link_to 'Registrate', new_user_registration_path %>
+		</div>
+	</section>
+
+	<section id="features">
+		<div class="row">
+
+			<div class="three columns">
+				<span class="entypo x-large"></span>
+				<h3>Diseño</h3>
+			</div>
+			<div class="three columns">
+				<span class="entypo x-large">📰</span>
+				<h3>Contenido</h3>
+			</div>
+			<div class="three columns">
+				<span class="entypo x-large">📈</span>
+				<h3>Ventas</h3>
+			</div>
+			<div class="three columns">
+				<span class="entypo x-large">⚒</span>
+				<h3>Más</h3>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="design">
+		<article id="incredible-design">
+			<div class="row">
+				<div class="twelve columns">
+					<span class="entypo large badge orange"></span>
+					<h2>Diseño Increible.</h2>
+					<p>Utiliza alguno de nuestros templates originales para lucir tus productos de la mejor manera.</p>
+					<%= image_tag 'screenshot-diseno.png' %>
+				</div>
+			</div>
+		</article>
+		<article id="customize">
+			<div class="row">
+				<div class="twelve columns">
+					<span class="entypo large badge orange"></span>
+					<h2>Personaliza tu tienda.</h2>
+					<p>Tu marca es muy importante. Dále personalidad a tu tienda fácilmente y sin habilidades de diseño y coding.</p>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<section id="content">
+		<article id="pages">
+			<div class="row">
+				<div class="twelve columns">
+					<span class="entypo large badge magenta">📰</span>
+					<h2>Crea páginas interactivas.</h2>
+					<p>Enriquece tu tienda con páginas informativas con texto, video y fotografías.</p>
+					<%= image_tag 'screenshot-paginas.png' %>
+				</div>
+			</div>
+		</article>
+		<article id="customize">
+			<div class="row">
+				<div class="twelve columns">
+					<span class="entypo large badge magenta"></span>
+					<h2>Agrega productos fácilmente.</h2>
+					<p>Tan fácil como asignarle un nombre, descripción, precio e imágen a cada producto. Sube todo tu catálogo en minutos.</p>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<section id="sales">
+		<article id="cart">
+			<div class="row">
+				<div class="twelve columns">
+					<span class="entypo large badge blue"></span>
+					<h2>Tu carrito seguro.</h2>
+					<p>Con nuestro módulo de pagos, ten la seguridad de que los datos de tus clientes están protegidos.</p>
+					<%= image_tag 'screenshot-paypal.png' %>
+				</div>
+			</div>
+		</article>
+		<article id="orders">
+			<div class="row">
+				<div class="twelve columns">
+					<span class="entypo large badge blue"></span>
+					<h2>Administra tu tienda.</h2>
+					<p>Pedidos, productos, etc... administra tu tienda de la forma más sencilla con nuestro sistema.</p>
+					<div class="row">
+						<div class="eight columns">
+							<div id="admin-features" class="admin-features">
+								<%= image_tag 'screenshot-admin1.png' %>
+								<%= image_tag 'screenshot-admin2.png' %>
+								<%= image_tag 'screenshot-admin3.png' %>
+								<%= image_tag 'screenshot-admin4.png' %>
+							</div>
+						</div>
+						<div class="four columns">
+							<h3>Admin</h3>
+							<p>The Kitchen Sink is an app that showcases all of the UI widgets, data features, animations, themes, and touch events offered by Sencha Touch. The app also features an easy way to view the live source of each demo — making it a great introduction to the framework.</p>
+							<h3>Admin</h3>
+							<p>The Kitchen Sink is an app that showcases all of the UI widgets, data features, animations, themes, and touch events offered by Sencha Touch. The app also features an easy way to view the live source of each demo — making it a great introduction to the framework.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article id="stats">
+			<div class="row">
+				<div class="twelve columns">
+					<span class="entypo large badge blue">📈</span>
+					<h2>Indicadores que te motivarán.</h2>
+					<p>Entérate como va tu negocio con solo un vistazo; conoce lo que has generado en ventas y visitas.</p>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<section id="others">
+		<article>
+			<div class="row">
+				<div class="four columns">
+					<span class="entypo large badge green">☁</span>
+					<h3>Hosting</h3>
+					<p>Con nuestro servicio de hospedaje, tu tienda siempre estará en línea.</p>
+				</div>
+				<div class="four columns">
+					<span class="entypo large badge green"></span>
+					<h3>Dominio propio</h3>
+					<p>Utiliza tu propio dominio<br><strong>www.tutienda.com</strong></p>
+					<%= image_tag 'screenshot-dominio.png' %>
+				</div>
+				<div class="four columns">
+					<span class="entypo large badge green">❓</span>
+					<h3>Soporte</h3>
+					<p>Te ayudamos personalmente con cualquier duda que tengas.</p>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<%=	render partial: "site/layouts/call_to_action" %>
+
+	<section id="about-us">
+		<article>
+			<div class="row">
+				<div class="twelve columns">
+					<h2>Sobre Nosotros</h2>
+				</div>
+				<div class="six columns">
+					<p>
+						Somos un equipo de jóvenes emprendedores que busca promover el emprendimiento y el comercio electrónico en México y LatAm. Nuestro objetivo es ver a nuestros clientes contentos con Vendorama, logrando ofrecer la mejor experiencia de compra/venta en comercio electrónico.
+					</p>
+				</div>
+				<div class="six columns">
+					<p>
+						Nos gusta ser auténticos y hacer las cosas bien. Nos mueven las historias de éxito de gente emprendedora y de productos y servicios innovadores. Escríbenos un correo personal a <%= link_to 'hola@vendorama.mx', '#' %>. Nos dará mucho gusto saludarte y saber de ti.
+					</p>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<section id="share">
+		<article>
+			<div class="row">
+				<div class="twelve columns">
+					<a href="#" class="entypo-social x-large"></a>
+					<a href="#" class="entypo-social x-large"></a>
+					<a href="#" class="entypo-social x-large"></a>
+					<a href="#" class="entypo-social x-large"></a>
+					<h3>Si te gusta, comparte!</h3>
+			</div>
+		</article>
+	</section>
