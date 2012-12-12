@@ -61,6 +61,7 @@ pickle-email-*.html
 
 # Mac finder artifacts
 .DS_Store
+.psd
 
 # Netbeans project directory
 /nbproject/
@@ -70,6 +71,10 @@ pickle-email-*.html
 
 # Textmate project files
 /*.tmproj
+
+# Sublime Text 2 project files
+/*.sublime-project
+/*.sublime-workspace
 
 # vim artifacts
 **.swp
