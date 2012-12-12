@@ -5,7 +5,7 @@ Vendo::Application.routes.draw do
   end
 
   authenticated :user do
-    root :to => 'home#index'
+    root :to => 'site/home#index'
   end
 
   root :to => "site/home#index"

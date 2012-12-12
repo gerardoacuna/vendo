@@ -1,5 +1,16 @@
 @import "constants";
 
+@font-face {
+  font-family: 'HandSean';
+  src: font-url('handsean.eot');
+  src: font-url('handsean.eot?#iefix') format('embedded-opentype'),
+       font-url('handsean.woff') format('woff'),
+       font-url('handsean.ttf') format('truetype'),
+       font-url('handsean.svg#HandSean') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, select, input, textarea, p {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
