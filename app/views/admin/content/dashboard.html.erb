@@ -1,0 +1,9 @@
+<h1>DASHBOARD!!!!</h1>
+
+<h3>CONTENIDO GRATIS</h3>
+
+<% if can? :manage, :all %>
+	<h3>CONTENIDO Pagado</h3>
+<% else %>
+	<h3>UPGRADE</h3>
+<% end %>
